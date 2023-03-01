@@ -27,18 +27,20 @@ nav {
 #nav-bar {
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content:center;
     align-items: center;
     height: 100%;
     min-height: 250px;
     max-height: 40%;
-    width: 15%;
+    min-width: 60px;
+    width: 100%;
+    max-width: 5vw;
     border-radius: 50vw;
     gap: 18%;
     background-color: #2929294b;
 }
 .ancora {
-    max-width: 55%;
+    max-width: 53%;
 }
 .UI-icon {
     width: 100%;
@@ -110,10 +112,10 @@ nav {
     display: flex;
     align-items: center;
     background: radial-gradient(rgba(255, 0, 0, 0), rgba(126, 17, 128, 0.027), rgba(184, 25, 187, 0.068));
-    gap: 11%;
+    gap: 7%;
 }
 #sobre-texto{
-    max-width: 608px;
+    max-width: 35%;
     margin-left: 19%;
 }
 #sobre-texto h3{
@@ -145,12 +147,22 @@ nav {
     position: relative;
     color: #ffffff;
     width: 100%;
+    background: radial-gradient(rgba(255, 0, 0, 0), rgba(126, 17, 128, 0.027), rgba(184, 25, 187, 0.068));
+}
+#projetos h3 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 3rem;
+    color: #ae17fd;
 }
 
 #todos-projetos {
-    width: 60%;
-    height: clamp(0px, 550px, 550px);
-    background-color: #ffffff;
+    position: relative;
+    margin-top: 4%;
+    background-color: #2020204d;
+    width: 60vw;
+    min-width: 125px;
+    min-height: 125px;
+    height: 35vw;
 }
 
 #back-code {
