@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root {
+    --radial: radial-gradient(rgba(255, 0, 0, 0), rgba(126, 17, 128, 0.037), rgba(184, 25, 187, 0.062));
+    --base: rgb(18, 18, 18);
+    --roxo: #ae17fd;
+    --amarelo: #FFB11C;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.2vw;
+}
+
+main {
+    height: 100vh;
+    background-color: var(--base);
+}
+
+.paginas {
+    height: 100vh;
+}
+
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background: var(--radial);
+    padding-left: 10%;
+}
+#home-desc h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 4.5rem;
+    color: var(--roxo);
+}
+#home-desc h3 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2.9rem;
+    color: var(--roxo);
+}
+#home-desc p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    padding-top: 4%;
+    color: rgb(240, 240, 240);
+}
+#home-desc p bdi {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    color: var(--roxo);
+}
+#perfil {
+    width: 21vw;
+    height: 21vw;
+    background-color: rgb(240, 240, 240);
+    box-shadow: #ac17fd13 0px 0px 140px;
+    border-radius: 50%;
+}
+
+
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    background: var(--radial);
+    padding-left: 8%;
+}
+#sobre-texto{
+    max-width: 40%;
+}
+#sobre-texto h3{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 3rem;
+    color: #ae17fd;
+}
+#sobre-texto p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    padding-top: 4%;
+    color: rgb(240, 240, 240);
+}
+#sobre-imagem {
+    width: 20vw;
+    height: 30vw;
+    background-color: rgb(240, 240, 240);
+    box-shadow: #ac17fd13 0px 0px 140px;
+}
+
+
+
+#projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--radial);
+}
+#projetos h3 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 3rem;
+    color: #ae17fd;
+}
+#todos-projetos {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 43vw;
+    height: 29vw;
+}
+.projeto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 2vw;
+    background-color: #585858;
+    margin: 5%;
+    border: 0.6vw solid #2525253f;
+}
+.projeto > h4 {
+    position: absolute;
+    z-index: 2;
+    align-self: flex-end;
+    bottom: 5%;
+}
+.projeto > img {
+    position: absolute;
+    width: 150%;
+    z-index: 1;
+    opacity: .2;
+}

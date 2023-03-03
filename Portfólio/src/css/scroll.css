@@ -1,0 +1,27 @@
+html {
+    scroll-behavior: smooth;
+}
+
+main::-webkit-scrollbar {
+    width: 0.6vw;
+}
+main::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 100, 100, 0.521);
+    border-radius: 100vw;
+    border: 0.2vw solid rgb(39, 39, 39);
+}
+main::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(100, 100, 100, 0.884);
+}
+main::-webkit-scrollbar-track {
+    background-color: rgb(27, 27, 27);
+}
+
+main {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.paginas {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
